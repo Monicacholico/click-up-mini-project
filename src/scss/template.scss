@@ -223,19 +223,19 @@ body {
                     flex-flow: row nowrap;
                     padding-right: 132px;
                     &.fourCardPack__cardItem--green {
-                        background-image: url('images/imageBg_cardOneFourPack.png');
+                        background-image: url('/images/imageBg_cardOneFourPack.png');
                         background-repeat: no-repeat;
                     }
                     &.fourCardPack__cardItem--violet {
-                        background-image: url('images/imageBg_cardTwoFourPack.png');
+                        background-image: url('/images/imageBg_cardTwoFourPack.png');
                         background-repeat: no-repeat;
                     }
                     &.fourCardPack__cardItem--pink {
-                        background-image: url('images/imageBg_cardThreeFourPack.png');
+                        background-image: url('/images/imageBg_cardThreeFourPack.png');
                         background-repeat: no-repeat;
                     }
                     &.fourCardPack__cardItem--blue {
-                        background-image: url('images/imageBg_cardFourFourPack.png');
+                        background-image: url('/images/imageBg_cardFourFourPack.png');
                         background-repeat: no-repeat;
                     }
                     
