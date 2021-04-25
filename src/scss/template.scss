@@ -395,7 +395,11 @@ body {
             display: flex;
             flex-flow: row nowrap;
             .footer__splitItem {
-                
+                   .footer__linkList {
+                        .footer__linkListItem {
+                            list-style: none;
+                        }
+                    }
                 &.footer__splitItem--left {
                     .header {
                         padding: 62px 0 0 0;
@@ -406,6 +410,7 @@ body {
                     display: flex;
                     flex-flow: row nowrap;
                     width: 30%;
+                 
                 }
                 &.footer__splitItem--right {
                     width: 30%;
@@ -414,8 +419,6 @@ body {
             }
         }
     }
-   
-
 }
 
 
