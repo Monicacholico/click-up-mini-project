@@ -12,7 +12,7 @@ body {
 .molo .header {
   display: flex;
   flex-flow: row nowrap;
-  padding: 62px 240px;
+  padding: 0 240px 62px 240px;
 }
 
 .molo .header .logo {
@@ -95,7 +95,7 @@ body {
   width: 210px;
   height: 60px;
   position: relative;
-  top: 40px;
+  top: 45px;
   -webkit-box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
   box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
 }
@@ -116,7 +116,7 @@ body {
 .molo .section .mainBanner {
   display: flex;
   flex-flow: row nowrap;
-  padding-top: 75px;
+  padding-top: 53px;
 }
 
 .molo .section .mainBanner .mainBanner__contentWrapper {
@@ -216,14 +216,15 @@ body {
 }
 
 .molo .section .fourCardPack {
-  margin-top: 148px;
+  margin-top: 150px;
+  margin-left: -3px;
   display: flex;
   flex-flow: column wrap;
 }
 
 .molo .section .fourCardPack .fourCardPack__headerContent {
   max-width: 584px;
-  margin: auto 19%;
+  margin: auto 19.75%;
 }
 
 .molo .section .fourCardPack .fourCardPack__headerContent .fourCardPack__headerContent--title {
@@ -348,8 +349,6 @@ body {
   border-radius: 50px;
   background-color: #9c69e2;
   margin-bottom: 150px;
-  -webkit-box-shadow: inset -81px -1px 17px 9px rgba(183, 119, 225, 0.75);
-  box-shadow: inset -81px -1px 17px 9px rgba(183, 119, 225, 0.75);
 }
 
 .molo .section .carousel .carousel__heading {
@@ -380,32 +379,29 @@ body {
   width: 75%;
   border-radius: 20px;
   margin-left: 93px;
+  box-shadow: 0px 20px 0px 0px rgba(54, 16, 88, 0.2);
 }
 
 .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--one .carousel__imgWrapper {
   padding: 60px 10px 50px 70px;
 }
 
-.molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--one .carousel__imgWrapper .carousel__img {
-  border: solid .035rem gray;
-  border-radius: 50%;
-}
-
 .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two {
   width: 32%;
   border-radius: 20px 0px 0px 20px;
   margin-left: 20px;
-  -webkit-box-shadow: inset -81px -1px 17px 9px rgba(183, 119, 225, 0.75);
-  box-shadow: inset -81px -1px 17px 9px rgba(183, 119, 225, 0.75);
+  box-shadow: 0px 20px 0px 0px rgba(54, 16, 88, 0.1);
+}
+
+.molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two .carousel__cardItemWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
 }
 
 .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two .carousel__imgWrapper {
   padding: 55px 50px 50px 40px;
-}
-
-.molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two .carousel__imgWrapper .carousel__img {
-  border: solid .035rem gray;
-  border-radius: 50%;
 }
 
 .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two .carousel__contentWrapper {
@@ -444,6 +440,37 @@ body {
   height: 130px;
   font-size: 18px;
   line-height: 32px;
+  color: #4B5D68;
+}
+
+.molo .section .carousel .carousel__row--pagination {
+  padding: 43px 93px;
+}
+
+.molo .section .carousel .carousel__row--pagination .carousel__pagination {
+  padding: 15px 6px;
+  color: #ffffff;
+}
+
+.molo .section .carousel .carousel__row--pagination .carousel__pagination--active {
+  color: #F063B8;
+  font-size: 40px;
+}
+
+.molo .section .carousel .carousel__row--pagination .carousel__controlArrow--left {
+  position: absolute;
+  right: 195px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.molo .section .carousel .carousel__row--pagination .carousel__controlArrow--right {
+  position: relative;
+  left: 92.5%;
+  top: 5px;
+  font-size: 30px;
+  color: #ffffff;
+  opacity: .3;
 }
 
 .molo .section .ribbon {

@@ -11,7 +11,7 @@ body {
     .header {
         display: flex;
         flex-flow: row nowrap;
-        padding: 62px 240px;
+        padding: 0 240px 62px 240px ;
         .logo {
             display: flex;
             flex-flow: row nowrap;
@@ -85,7 +85,7 @@ body {
                 width: 210px;
                 height: 60px;
                 position: relative;
-                top: 40px;
+                top: 45px;
                 -webkit-box-shadow: 0 5px 5px 0 rgba(75,93,104,0.1);
                 box-shadow: 0 5px 5px 0 rgba(75,93,104,0.1);
             }
@@ -104,7 +104,7 @@ body {
         .mainBanner {
             display: flex;
             flex-flow: row nowrap;
-            padding-top: 75px;
+            padding-top: 53px;
             .mainBanner__contentWrapper {
                 width: 30%;
                 .mainBanner__heading {
@@ -155,17 +155,13 @@ body {
             background-color: rgba(240, 99, 184, 0.15);
             width: 1117px;
             height: 560px;
-            // top: 903px;
             border-radius: 50px;
             margin-top: 198px;
             .oneCard__imageWrapper {
                 width: 30%;
                 .oneCard__img {
-                    // position: absolute;
                     width: 477px;
                     height: 504px;
-                    // top: 935px;
-                    // left: 251px;
                     z-index: 100;
                     margin-top: 32px;
                     margin-left: 10px;
@@ -178,38 +174,31 @@ body {
                     font-weight: 700;
                     font-size: 40px;
                     line-height: 52px;
-                    // position:inherit;
                     width:475px;
-                    // top:83px;
-                    // left: 550px;
                     color: #212353;
                     padding-top: 122px;
                     padding-left: 215px;
-                    margin-block-start: 0;
-                    
+                    margin-block-start: 0;   
                 }
                 .oneCard__text {
                     font-family: 'Nunito', sans-serif;
                     font-size: 18px;
                     line-height: 28px;
-                    // position: inherit;
                     width: 474px;
                     height: 170px;
                     margin-left:215px;
-                    // left: 550px;
-                    // top: 245px;
                     letter-spacing: .3;
                 }
             }
         }
         .fourCardPack {
-            margin-top: 148px;
+            margin-top: 150px;
+            margin-left: -3px;
             display: flex;
             flex-flow: column wrap;
             .fourCardPack__headerContent {
                 max-width: 584px;
-                margin: auto 19%;
-
+                margin: auto 19.75%;
                 .fourCardPack__headerContent--title {
                     font-family: 'Helvetica', sans-serif;
                     font-weight: 700;
@@ -237,7 +226,6 @@ body {
                 padding: 0 5px;
                 height: 400px;
                 .fourCardPack__cardItem {
-                    // margin-top: 100px;
                     width: 442px;
                     height: auto;
                     display: flex;
@@ -267,14 +255,10 @@ body {
                         background-position: top center;
                         background-position-x: 110px;
                     }
-                    
                     .fourCardPack__cardImgWrapper {
                         margin-top: 12px;
                         position: relative;
                         top: 60px;
-                        .fourCardPack__cardImg{
-
-                        }
                     }
                     .fourCardPack__cardContent {
                         padding-left: 29px;
@@ -317,19 +301,14 @@ body {
                         }
                     }
                 }
-
             }
-
         }
-
         .carousel {
             width: 1118px;
             height: 709px;
             border-radius: 50px;
             background-color: #9c69e2;
             margin-bottom: 150px;
-            -webkit-box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
-            box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
             .carousel__heading {
                 width: 405px;
                 height: 52px;
@@ -348,36 +327,29 @@ body {
                     flex-flow: row nowrap;
                     width: 645px;
                     height: 330px;
-                    // border-radius: 20px;
                     background-color: #ffffff;
-                    // box-shadow: inset -81px -1px 17px 9px rgb(183, 119, 225, 0.75);
-                    
-                    // margin-left: 93px;
                     &.carousel__cardItem--one {
                         width: 75%;
                         border-radius: 20px;
                         margin-left: 93px;
+                        box-shadow: 0px 20px 0px 0px rgba(54,16,88,0.2);
                         .carousel__imgWrapper {
                             padding: 60px 10px 50px 70px;
-                            .carousel__img {
-                                border: solid .035rem gray;
-                                border-radius: 50%;
-                            }
-                            
                         }
                     }
                     &.carousel__cardItem--two {
                         width: 32%;
                         border-radius: 20px 0px 0px 20px;
                         margin-left: 20px;
-                        -webkit-box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
-                        box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
+                        box-shadow: 0px 20px 0px 0px rgba(54,16,88,0.1);
+                        .carousel__cardItemWrapper {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            overflow: hidden;
+                            background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+                        }
                         .carousel__imgWrapper {
                             padding: 55px 50px 50px 40px;;
-                            .carousel__img {
-                                border: solid .035rem gray;
-                                border-radius: 50%;
-                            }
                         }
                         .carousel__contentWrapper {
                             margin-top: -5px;
@@ -412,9 +384,35 @@ body {
                             height: 130px;
                             font-size: 18px;
                             line-height: 32px;
+                            color: #4B5D68;
                         }
                     }
     
+                }
+            }
+            .carousel__row--pagination {
+                padding: 43px 93px;
+                .carousel__pagination {
+                    padding: 15px 6px;
+                    color: #ffffff;
+                }
+                .carousel__pagination--active {
+                    color: #F063B8;
+                    font-size: 40px;
+                }
+                .carousel__controlArrow--left {
+                    position: absolute;
+                    right: 195px;
+                    color: #ffffff;
+                    font-size: 30px;
+                }
+                .carousel__controlArrow--right {
+                    position: relative;
+                    left: 92.5%;
+                    top: 5px;
+                    font-size: 30px;
+                    color: #ffffff;
+                    opacity: .3;
                 }
             }
         }
