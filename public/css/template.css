@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+.molo {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .molo .header {
   display: flex;
   flex-flow: row nowrap;
@@ -54,68 +59,206 @@ body {
   display: flex;
   flex-flow: row nowrap;
   list-style: none;
+  padding: 0;
+  position: absolute;
 }
 
 .molo .header .nav .nav__menu .nav__menuListItem {
   padding: 0 10px;
   font-weight: bold;
-  margin: 0 4px;
+  margin: 0 10px;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   align-self: baseline;
+  font-weight: 500;
+}
+
+.molo .header .nav .nav__menu .nav__menuListItem--bold {
+  font-weight: bolder;
 }
 
 .molo .section {
   padding-left: 240px;
+}
+
+.molo .section .mainBanner {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 75px;
+}
+
+.molo .section .mainBanner .mainBanner__contentWrapper {
+  width: 30%;
+}
+
+.molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__heading {
+  width: 645px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 80px;
+  color: #212353;
+  z-index: 100;
+  line-height: 88px;
+  margin-block-end: 0;
+}
+
+.molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__text {
   font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  width: 360px;
+  margin-top: 50px;
+  color: #4B5D68;
+  line-height: 30px;
+  font-weight: 900;
 }
 
-.molo .section .mainBanner .mainBanner__imageWrapper {
-  position: absolute;
-  width: 885px;
-  height: 468px;
-  left: 603px;
-  top: 333px;
-  background-image: url("images/image_mainBanner.png");
+.molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__button {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 18px;
+  background-color: #9c69e2;
+  padding: 16px 37px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 38px;
+  font-weight: 900;
 }
 
-.molo .section .row .col.col-4 .row:nth-child(2) .col.col-2, .molo .section .row .col.col-4 .row:nth-child(3) .col.col-2 {
-  border-right: solid 1px black;
+.molo .section .mainBanner .mainBanner__img {
+  width: 70%;
+  background-image: url("/images/image_mainBanner.png");
+  background-size: 875px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: relative;
+  top: 158px;
+  left: 5px;
 }
 
-.molo .section-header-centered {
+.molo .section .oneCard {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: rgba(240, 99, 184, 0.15);
+  width: 1117px;
+  height: 560px;
+  border-radius: 50px;
+  margin-top: 198px;
+}
+
+.molo .section .oneCard .oneCard__imageWrapper {
+  width: 30%;
+}
+
+.molo .section .oneCard .oneCard__imageWrapper .oneCard__img {
+  width: 477px;
+  height: 504px;
+  z-index: 100;
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.molo .section .oneCard .oneCard__contentWrapper {
+  width: 70%;
+}
+
+.molo .section .oneCard .oneCard__contentWrapper .oneCard__heading {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 475px;
+  color: #212353;
+  padding-top: 122px;
+  padding-left: 215px;
+  margin-block-start: 0;
+}
+
+.molo .section .oneCard .oneCard__contentWrapper .oneCard__text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  width: 474px;
+  height: 170px;
+  margin-left: 215px;
+  letter-spacing: .3;
+}
+
+.molo .section .fourCardPack {
+  margin-top: 150px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.molo .section .fourCardPack .fourCardPack__heading {
+  width: 405px;
+  height: 52px;
+  margin: auto;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #212353;
   text-align: center;
-  font-size: 2em;
 }
 
-.molo .section-header-centered .main-title {
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+.molo .section .fourCardPack .fourCardPack__subHeading {
+  width: 584px;
+  margin: auto;
+  text-align: center;
+  height: 58px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.molo .section-header-centered .main-subtitle {
-  font-size: 1.5em;
-}
-
-.molo .section-header-centered .reg-par {
-  font-size: 1em;
-}
-
-.molo .row {
+.molo .section .fourCardPack .fourCardPack__row {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.molo .col {
-  padding: 16px;
+.molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem {
+  margin-top: 100px;
+  width: 442px;
+  height: 358px;
 }
 
-.molo .col-8 {
-  max-width: 80%;
-  width: 50%;
+.molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem.fourCardPack__cardItem--green {
+  background-image: url("images/imageBg_cardOneFourPack.png");
+  background-repeat: no-repeat;
+}
+
+.molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLabel {
+  width: 200px;
+  height: 50px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardText {
+  width: 220px;
+  height: 160px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLink {
+  width: 87px;
+  height: 26px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 26px;
+  color: #212353;
+}
+
+.molo .section .row .col.col-4 .row:nth-child(2) .col.col-2, .molo .section .row .col.col-4 .row:nth-child(3) .col.col-2 {
   border-right: solid 1px black;
 }
 

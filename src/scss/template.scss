@@ -6,6 +6,8 @@ body {
 }
 
 .molo {
+    display: flex;
+    flex-flow: column wrap;
     .header {
         display: flex;
         flex-flow: row nowrap;
@@ -49,37 +51,207 @@ body {
                     display: flex;
                     flex-flow: row nowrap;
                     list-style: none;
+                    padding: 0;
+                    position: absolute;
                     .nav__menuListItem {
                         padding: 0 10px;
                         font-weight: bold;
-                        margin: 0 4px;
+                        margin: 0 10px;
                         max-width: 100%;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         align-self: baseline;
+                        font-weight: 500;
+                    }
+                    .nav__menuListItem--bold {
+                        font-weight: bolder;
                     }
                 }
             }
     }
     .section {
         padding-left: 240px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 16px;
+        // font-family: 'Nunito', sans-serif;
+        // font-size: 16px;
         .mainBanner {
+            display: flex;
+            flex-flow: row nowrap;
+            padding-top: 75px;
             .mainBanner__contentWrapper {
+                width: 30%;
+                .mainBanner__heading {
+                    width: 645px;
+                    font-family: 'Helvetica', sans-serif;
+                    font-size: 80px;
+                    color: #212353;
+                    z-index: 100;
+                    line-height: 88px;
+                    margin-block-end: 0;
+                }
+                .mainBanner__text {
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 18px;
+                    width: 360px;
+                    // position: absolute;
+                    // top: 471px;
+                    margin-top: 50px;
+                    color:#4B5D68;
+                    line-height: 30px;
+                    font-weight: 900;
+                }
+                .mainBanner__button {
+                    font-family: 'Nunito', sans-serif;
+                    color: white;
+                    font-size: 18px;
+                    background-color: #9c69e2;
+                    padding: 16px 37px;
+                    // position: absolute;
+                    // top: 641px;
+                    border-radius: 50px;
+                    border: none;
+                    margin-top: 38px;
+                    font-weight: 900;
+                }
+            }
+            .mainBanner__img {
+                width: 70%;
+                background-image: url('/images/image_mainBanner.png');
+                background-size: 875px;
+                background-repeat: no-repeat;
+                z-index: -1;
+                position: relative;
+                top: 158px;
+                left: 5px;
+            }
+        }
+        .oneCard {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: rgba(240, 99, 184, 0.15);
+            width: 1117px;
+            height: 560px;
+            // top: 903px;
+            border-radius: 50px;
+            margin-top: 198px;
+            .oneCard__imageWrapper {
+                width: 30%;
+                .oneCard__img {
+                    // position: absolute;
+                    width: 477px;
+                    height: 504px;
+                    // top: 935px;
+                    // left: 251px;
+                    z-index: 100;
+                    margin-top: 32px;
+                    margin-left: 10px;
+                }
+            }
+            .oneCard__contentWrapper {
+                width: 70%;
+                .oneCard__heading {
+                    font-family: 'Helvetica', sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 52px;
+                    // position:inherit;
+                    width:475px;
+                    // top:83px;
+                    // left: 550px;
+                    color: #212353;
+                    padding-top: 122px;
+                    padding-left: 215px;
+                    margin-block-start: 0;
+                    
+                }
+                .oneCard__text {
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 18px;
+                    line-height: 28px;
+                    // position: inherit;
+                    width: 474px;
+                    height: 170px;
+                    margin-left:215px;
+                    // left: 550px;
+                    // top: 245px;
+                    letter-spacing: .3;
+                }
+            }
+        }
+        .fourCardPack {
+            margin-top: 150px;
+            display: flex;
+            flex-flow: column wrap;
+            .fourCardPack__heading {
+                width: 405px;
+                height: 52px;
+                margin: auto;
+                font-family: 'Helvetica', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 52px;
+                color: #212353;
+                text-align: center;
 
             }
-            .mainBanner__imageWrapper {
-                // .mainBanner__img {
-                    position: absolute;
-                    width: 885px;
-                    height: 468px;
-                    left: 603px;
-                    top: 333px;
-                    background-image: url('images/image_mainBanner.png');
-                // }
+            .fourCardPack__subHeading {
+                width: 584px;
+                margin: auto;
+                text-align: center;
+                height: 58px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 500;
+                text-align: center;
             }
+            .fourCardPack__row {
+                display: flex;
+                flex-flow: row nowrap;
+                .fourCardPack__cardItem {
+                    margin-top: 100px;
+                    width: 442px;
+                    height:358px;
+                    &.fourCardPack__cardItem--green {
+                        background-image: url('images/imageBg_cardOneFourPack.png');
+                        background-repeat: no-repeat;
+                    }
+                    .fourCardPack__cardImgWrapper {
+                        .fourCardPack__cardImg{
+
+                        }
+                    }
+                    .fourCardPack__cardContent {
+                        .fourCardPack__cardLabel {
+                            width: 200px;
+                            height: 50px;
+                            font-family: 'Helvetica', sans-serif;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+                        .fourCardPack__cardText {
+                            width: 220px;
+                            height: 160px;
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 26px;
+                        }
+                        .fourCardPack__cardLink {
+                            width: 87px;
+                            height: 26px;
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 16px;
+                            font-weight: 800;
+                            line-height: 26px;
+                            color: #212353;
+                        }
+                    }
+                }
+
+            }
+
         }
 
         .row {
@@ -92,32 +264,7 @@ body {
             }
         }
     }
-    .section-header-centered {
-        text-align: center;
-        font-size: 2em;
-        .main-title {
-            border-top: solid 1px black;
-            border-bottom: solid 1px black;
-        }
-        .main-subtitle {
-            font-size: 1.5em;
-        }
-        .reg-par {
-            font-size: 1em;
-        }
-    }
-    .row {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .col {
-        padding: 16px;
-    }
-    .col-8 {
-        max-width: 80%;
-        width: 50%;
-        border-right: solid 1px black;
-    }
+   
 
 }
 
