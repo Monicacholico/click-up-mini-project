@@ -407,6 +407,10 @@ body {
   flex-flow: row nowrap;
 }
 
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkList .footer__linkListItem {
+  list-style: none;
+}
+
 .molo .footer .footer__splitWrapper .footer__splitItem.footer__splitItem--left {
   width: 30%;
 }
