@@ -81,6 +81,34 @@ body {
   font-weight: bolder;
 }
 
+.molo .header .header__button {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: 'Nunito', sans-serif;
+  color: #212353;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 17px 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 900;
+  width: 210px;
+  height: 60px;
+  position: relative;
+  top: 40px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+  box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+}
+
+.molo .header .header__button:after {
+  content: '\2192';
+  color: #9c69e2;
+  position: relative;
+  top: -13px;
+  left: 10px;
+  font-size: 40px;
+}
+
 .molo .section {
   padding-left: 240px;
 }
@@ -423,7 +451,7 @@ body {
   height: 150px;
   display: flex;
   flex-flow: row nowrap;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .molo .section .ribbon .ribbon__callOutWrapper .ribbon__heading {
@@ -444,12 +472,12 @@ body {
   color: #4B5D68;
 }
 
-.molo .section .ribbon .ribbon__button {
+.molo .section .ribbon .ribbon__button--learn {
   font-family: 'Nunito', sans-serif;
   color: white;
   font-size: 18px;
   background-color: #F063B8;
-  padding: 16px 37px;
+  padding: 16px 30px;
   border-radius: 50px;
   border: none;
   margin-top: 20px;
@@ -459,18 +487,47 @@ body {
   height: 60px;
 }
 
-.molo .section .row .col.col-4 .row:nth-child(2) .col.col-2, .molo .section .row .col.col-4 .row:nth-child(3) .col.col-2 {
-  border-right: solid 1px black;
+.molo .section .ribbon .ribbon__button--request {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: 'Nunito', sans-serif;
+  color: #212353;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 17px 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  width: 210px;
+  height: 60px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+  box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+}
+
+.molo .section .ribbon .ribbon__button--request:after {
+  content: '\2192';
+  color: #9c69e2;
+  position: relative;
+  top: -13px;
+  left: 10px;
+  font-size: 40px;
 }
 
 .molo .section__carousel--borderBottom {
   border-bottom: 2px solid rgba(156, 105, 226, 0.2);
 }
 
+.molo .section__fourCardPack--marginBottom {
+  margin-bottom: 70px;
+}
+
 .molo .footer {
   width: 1118px;
   height: auto;
-  padding: 100px 240px;
+  padding: 117px 240px;
 }
 
 .molo .footer .footer__splitWrapper {
@@ -478,12 +535,98 @@ body {
   flex-flow: row nowrap;
 }
 
-.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkList .footer__linkListItem {
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemHeader {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemHeader .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 20px;
+  position: relative;
+  top: -75px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemHeader .logo .logo__small {
+  width: 20px;
+  height: 20px;
+  background-color: #9c69e2;
+  border-radius: 50%;
+  position: relative;
+  top: 74px;
+  margin-right: 9px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemHeader .logo .logo__large {
+  width: 20px;
+  height: 35px;
+  background-color: #f063b8;
+  border-radius: 20px;
+  position: relative;
+  top: 59px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemHeader .footer__splitItemHeaderTitle {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #212353;
+  margin-top: -12px;
+  margin-bottom: 55px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemAddress {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  color: #212353;
+  letter-spacing: .3;
+  margin-bottom: 30px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__splitItemContact {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #212353;
+  letter-spacing: .3;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkListColumn {
+  padding-right: 25%;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkListColumn .footer__linkItemHeading {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+  color: #212353;
+  padding-left: 28px;
+  margin-top: -5px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkListColumn .footer__linkList {
+  padding: 15px 0 0 28px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__linkListColumn .footer__linkList .footer__linkListItem {
   list-style: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #212353;
 }
 
 .molo .footer .footer__splitWrapper .footer__splitItem.footer__splitItem--left {
-  width: 30%;
+  width: 40%;
 }
 
 .molo .footer .footer__splitWrapper .footer__splitItem.footer__splitItem--left .header {
@@ -493,11 +636,35 @@ body {
 .molo .footer .footer__splitWrapper .footer__splitItem.footer__splitItem--middle {
   display: flex;
   flex-flow: row nowrap;
-  width: 30%;
+  width: 40%;
 }
 
 .molo .footer .footer__splitWrapper .footer__splitItem.footer__splitItem--right {
-  width: 30%;
+  width: 20%;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__socialItemHeading {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+  color: #212353;
+  padding-left: 12px;
+  margin-top: -5px;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__socialMediaIconWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.molo .footer .footer__splitWrapper .footer__splitItem .footer__socialMediaIconWrapper .footer__socialMediaIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #aaa;
+  margin-top: 15px;
+  margin: 13px 2px 0 13px;
 }
 
 /*# sourceMappingURL=template.css.map */
