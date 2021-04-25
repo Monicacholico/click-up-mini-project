@@ -127,7 +127,7 @@ body {
 
 .molo .section .mainBanner .mainBanner__img {
   width: 70%;
-  background-image: url("/images/image_mainBanner.png");
+  background-image: url("../images/image_mainBanner.png");
   background-size: 875px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -235,22 +235,22 @@ body {
 }
 
 .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem.fourCardPack__cardItem--green {
-  background-image: url("/images/imageBg_cardOneFourPack.png");
+  background-image: url("../images/imageBg_cardOneFourPack.png");
   background-repeat: no-repeat;
 }
 
 .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem.fourCardPack__cardItem--violet {
-  background-image: url("/images/imageBg_cardTwoFourPack.png");
+  background-image: url("../images/imageBg_cardTwoFourPack.png");
   background-repeat: no-repeat;
 }
 
 .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem.fourCardPack__cardItem--pink {
-  background-image: url("/images/imageBg_cardThreeFourPack.png");
+  background-image: url("../images/imageBg_cardThreeFourPack.png");
   background-repeat: no-repeat;
 }
 
 .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem.fourCardPack__cardItem--blue {
-  background-image: url("/images/imageBg_cardFourFourPack.png");
+  background-image: url("../images/imageBg_cardFourFourPack.png");
   background-repeat: no-repeat;
 }
 
