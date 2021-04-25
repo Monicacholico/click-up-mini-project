@@ -284,6 +284,7 @@ body {
             height: 709px;
             border-radius: 50px;
             background-color: #9c69e2;
+            margin-bottom: 150px;
             .carousel__heading {
                 width: 405px;
                 height: 52px;
@@ -337,6 +338,44 @@ body {
                 }
             }
         }
+        .ribbon {
+            width: 1118px;
+            height: 150px;
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 100px;
+            .ribbon__callOutWrapper {
+                .ribbon__heading {
+                    font-family: 'Helvetica', sans-serif;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 52px;
+                    color: #212353;
+                }
+                .ribbon__subHeading {
+                    width: 584px;
+                    height: 29px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #4B5D68;
+                }
+
+            }
+            .ribbon__button {
+                width: 170px;
+                height: 60px;
+                border-radius: 50px;
+                background-color: #F063B8;
+                color: #ffffff;
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+                // padding-top: 50px;
+                vertical-align: center;
+            }
+        }
+
+
 
         .row {
             .col.col-4 {
@@ -345,6 +384,33 @@ body {
                         border-right: solid 1px black;
                     }
                 }
+            }
+        }
+    }
+    .footer {
+        width: 1118px;
+        height: auto;
+        padding: 100px 240px;
+        .footer__splitWrapper{
+            display: flex;
+            flex-flow: row nowrap;
+            .footer__splitItem {
+                
+                &.footer__splitItem--left {
+                    .header {
+                        padding: 62px 0 0 0;
+                    }
+                    width: 30%;
+                }
+                &.footer__splitItem--middle {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    width: 30%;
+                }
+                &.footer__splitItem--right {
+                    width: 30%;
+                }
+
             }
         }
     }
