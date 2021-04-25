@@ -179,7 +179,7 @@ body {
             }
         }
         .fourCardPack {
-            margin-top: 150px;
+            margin-top: 148px;
             display: flex;
             flex-flow: column wrap;
             .fourCardPack__heading {
@@ -192,6 +192,9 @@ body {
                 line-height: 52px;
                 color: #212353;
                 text-align: center;
+                margin-bottom: 50px;
+                position: relative;
+                left: -50px;
 
             }
             .fourCardPack__subHeading {
@@ -204,24 +207,46 @@ body {
                 line-height: 28px;
                 font-weight: 500;
                 text-align: center;
+                margin-bottom: 100px;
+                position: relative;
+                left: -50px;
             }
             .fourCardPack__row {
                 display: flex;
                 flex-flow: row nowrap;
+                padding: 52px 5px;
                 .fourCardPack__cardItem {
-                    margin-top: 100px;
+                    // margin-top: 100px;
                     width: 442px;
-                    height:358px;
+                    height: auto;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    padding-right: 132px;
                     &.fourCardPack__cardItem--green {
                         background-image: url('images/imageBg_cardOneFourPack.png');
                         background-repeat: no-repeat;
                     }
+                    &.fourCardPack__cardItem--violet {
+                        background-image: url('images/imageBg_cardTwoFourPack.png');
+                        background-repeat: no-repeat;
+                    }
+                    &.fourCardPack__cardItem--pink {
+                        background-image: url('images/imageBg_cardThreeFourPack.png');
+                        background-repeat: no-repeat;
+                    }
+                    &.fourCardPack__cardItem--blue {
+                        background-image: url('images/imageBg_cardFourFourPack.png');
+                        background-repeat: no-repeat;
+                    }
+                    
                     .fourCardPack__cardImgWrapper {
+                        margin-top: 12px;
                         .fourCardPack__cardImg{
 
                         }
                     }
                     .fourCardPack__cardContent {
+                        padding-left: 29px;
                         .fourCardPack__cardLabel {
                             width: 200px;
                             height: 50px;
@@ -252,6 +277,65 @@ body {
 
             }
 
+        }
+
+        .carousel {
+            width: 1118px;
+            height: 709px;
+            border-radius: 50px;
+            background-color: #9c69e2;
+            .carousel__heading {
+                width: 405px;
+                height: 52px;
+                font-family: 'Helvetica', sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52px;
+                color: #ffffff;
+                padding: 109px 93px 88px 93px;
+            }
+            .carousel__row {
+                display: flex;
+                flex-flow: row nowrap;
+                .carousel__cardItem {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    width: 645px;
+                    height: 330px;
+                    border-radius: 20px;
+                    background-color: #ffffff;
+                    box-shadow: 0 20px 0 0 rgba(156, 105, 226, 0.3);
+                    margin-left: 93px;
+                    .carousel__imgWrapper {
+                        width: 20%;
+                    }
+                    .carousel__contentWrapper {
+                        font-family: 'Nunito', sans-serif;
+                        width: 80%;
+                        padding-top:80px;
+                        .carousel__cardName {
+                            font-size: 18px;
+                            font-weight: 800;
+                            line-height: 29px;
+                            letter-spacing: .5%;
+
+                        }
+                        .carousel__cardRole {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 22px;
+                            letter-spacing: 1%;
+                        }
+                        .carousel__cardBio {
+                            width: 385px;
+                            height: 130px;
+                            font-size: 18px;
+                            line-height: 32px;
+                        }
+                    }
+    
+                }
+            }
         }
 
         .row {
