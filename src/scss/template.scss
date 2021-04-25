@@ -53,6 +53,8 @@ body {
                     list-style: none;
                     padding: 0;
                     position: absolute;
+                    left: -20px;
+                    top: -12px;
                     .nav__menuListItem {
                         padding: 0 10px;
                         font-weight: bold;
@@ -92,13 +94,12 @@ body {
                 .mainBanner__text {
                     font-family: 'Nunito', sans-serif;
                     font-size: 18px;
-                    width: 360px;
-                    // position: absolute;
-                    // top: 471px;
+                    width: 363px;
                     margin-top: 50px;
                     color:#4B5D68;
                     line-height: 30px;
-                    font-weight: 900;
+                    font-weight: 500;
+                    letter-spacing: .3;
                 }
                 .mainBanner__button {
                     font-family: 'Nunito', sans-serif;
@@ -122,7 +123,7 @@ body {
                 z-index: -1;
                 position: relative;
                 top: 158px;
-                left: 5px;
+                left: -40px;
             }
         }
         .oneCard {
@@ -182,39 +183,36 @@ body {
             margin-top: 148px;
             display: flex;
             flex-flow: column wrap;
-            .fourCardPack__heading {
-                width: 405px;
-                height: 52px;
-                margin: auto;
-                font-family: 'Helvetica', sans-serif;
-                font-weight: 700;
-                font-size: 40px;
-                line-height: 52px;
-                color: #212353;
-                text-align: center;
-                margin-bottom: 50px;
-                position: relative;
-                left: -50px;
+            .fourCardPack__headerContent {
+                max-width: 584px;
+                margin: auto 19%;
 
-            }
-            .fourCardPack__subHeading {
-                width: 584px;
-                margin: auto;
-                text-align: center;
-                height: 58px;
-                font-family: 'Nunito', sans-serif;
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 500;
-                text-align: center;
-                margin-bottom: 100px;
-                position: relative;
-                left: -50px;
+                .fourCardPack__headerContent--title {
+                    font-family: 'Helvetica', sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 52px;
+                    color: #212353;
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .fourCardPack__headerContent--subTitle {
+                    text-align: center;
+                    height: 58px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-bottom: 100px;
+                    letter-spacing: .3;
+                }
             }
             .fourCardPack__row {
                 display: flex;
                 flex-flow: row nowrap;
-                padding: 52px 5px;
+                padding: 0 5px;
+                height: 400px;
                 .fourCardPack__cardItem {
                     // margin-top: 100px;
                     width: 442px;
@@ -225,28 +223,40 @@ body {
                     &.fourCardPack__cardItem--green {
                         background-image: url('../images/imageBg_cardOneFourPack.png');
                         background-repeat: no-repeat;
+                        background-position: top center;
+                        background-position-x: 110px;
                     }
                     &.fourCardPack__cardItem--violet {
                         background-image: url('../images/imageBg_cardTwoFourPack.png');
                         background-repeat: no-repeat;
+                        background-position: top center;
+                        background-position-x: 110px;
                     }
                     &.fourCardPack__cardItem--pink {
                         background-image: url('../images/imageBg_cardThreeFourPack.png');
                         background-repeat: no-repeat;
+                        background-position: top center;
+                        background-position-x: 110px;
                     }
                     &.fourCardPack__cardItem--blue {
                         background-image: url('../images/imageBg_cardFourFourPack.png');
                         background-repeat: no-repeat;
+                        background-position: top center;
+                        background-position-x: 110px;
                     }
                     
                     .fourCardPack__cardImgWrapper {
                         margin-top: 12px;
+                        position: relative;
+                        top: 60px;
                         .fourCardPack__cardImg{
 
                         }
                     }
                     .fourCardPack__cardContent {
                         padding-left: 29px;
+                        position: relative;
+                        top: 55px;
                         .fourCardPack__cardLabel {
                             width: 200px;
                             height: 50px;
@@ -254,6 +264,7 @@ body {
                             font-weight: 400;
                             font-size: 24px;
                             line-height: 32px;
+                            margin-bottom: 10px;
                         }
                         .fourCardPack__cardText {
                             width: 220px;
@@ -262,6 +273,7 @@ body {
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 26px;
+                            margin-bottom: 15px;
                         }
                         .fourCardPack__cardLink {
                             width: 87px;
@@ -271,6 +283,14 @@ body {
                             font-weight: 800;
                             line-height: 26px;
                             color: #212353;
+                        }
+                        .fourCardPack__cardLink::after {
+                            content: '\2192';
+                            color: #9c69e2;
+                            position: relative;
+                            top: -24px;
+                            left: 90px;
+                            font-size: 40px;
                         }
                     }
                 }
@@ -285,6 +305,8 @@ body {
             border-radius: 50px;
             background-color: #9c69e2;
             margin-bottom: 150px;
+            -webkit-box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
+            box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
             .carousel__heading {
                 width: 405px;
                 height: 52px;
@@ -293,7 +315,7 @@ body {
                 font-weight: 700;
                 line-height: 52px;
                 color: #ffffff;
-                padding: 109px 93px 88px 93px;
+                padding: 109px 93px 50px 93px;
             }
             .carousel__row {
                 display: flex;
@@ -303,17 +325,50 @@ body {
                     flex-flow: row nowrap;
                     width: 645px;
                     height: 330px;
-                    border-radius: 20px;
+                    // border-radius: 20px;
                     background-color: #ffffff;
-                    box-shadow: 0 20px 0 0 rgba(156, 105, 226, 0.3);
-                    margin-left: 93px;
+                    // box-shadow: inset -81px -1px 17px 9px rgb(183, 119, 225, 0.75);
+                    
+                    // margin-left: 93px;
+                    &.carousel__cardItem--one {
+                        width: 75%;
+                        border-radius: 20px;
+                        margin-left: 93px;
+                        .carousel__imgWrapper {
+                            padding: 60px 10px 50px 70px;
+                            .carousel__img {
+                                border: solid .035rem gray;
+                                border-radius: 50%;
+                            }
+                            
+                        }
+                    }
+                    &.carousel__cardItem--two {
+                        width: 32%;
+                        border-radius: 20px 0px 0px 20px;
+                        margin-left: 20px;
+                        -webkit-box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
+                        box-shadow:inset -81px -1px 17px 9px rgba(183,119,225,.75);
+                        .carousel__imgWrapper {
+                            padding: 55px 50px 50px 40px;;
+                            .carousel__img {
+                                border: solid .035rem gray;
+                                border-radius: 50%;
+                            }
+                        }
+                        .carousel__contentWrapper {
+                            margin-top: -5px;
+                        }
+                    }
                     .carousel__imgWrapper {
                         width: 20%;
+                        
                     }
                     .carousel__contentWrapper {
                         font-family: 'Nunito', sans-serif;
                         width: 80%;
                         padding-top:80px;
+                        overflow: hidden;
                         .carousel__cardName {
                             font-size: 18px;
                             font-weight: 800;
@@ -326,6 +381,8 @@ body {
                             font-weight: 500;
                             line-height: 22px;
                             letter-spacing: 1%;
+                            color: #9c69e2;
+                            margin-bottom: 20px;
                         }
                         .carousel__cardBio {
                             width: 385px;
@@ -338,12 +395,13 @@ body {
                 }
             }
         }
+
         .ribbon {
             width: 1118px;
             height: 150px;
             display: flex;
             flex-flow: row nowrap;
-            padding: 100px;
+            padding: 100px 0;
             .ribbon__callOutWrapper {
                 .ribbon__heading {
                     font-family: 'Helvetica', sans-serif;
@@ -351,6 +409,7 @@ body {
                     font-weight: 700;
                     line-height: 52px;
                     color: #212353;
+                    margin-bottom:24px;
                 }
                 .ribbon__subHeading {
                     width: 584px;
@@ -360,18 +419,20 @@ body {
                     font-weight: 500;
                     color: #4B5D68;
                 }
-
             }
             .ribbon__button {
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                font-size: 18px;
+                background-color: #F063B8;
+                padding: 16px 37px;
+                border-radius: 50px;
+                border: none;
+                margin-top: 20px;
+                margin-left: 123px;
+                font-weight: 900;
                 width: 170px;
                 height: 60px;
-                border-radius: 50px;
-                background-color: #F063B8;
-                color: #ffffff;
-                text-align: center;
-                font-family: 'Nunito', sans-serif;
-                // padding-top: 50px;
-                vertical-align: center;
             }
         }
 
@@ -386,6 +447,10 @@ body {
                 }
             }
         }
+    }
+    .section__carousel--borderBottom {
+        border-bottom: 2px solid rgba(156, 105, 226, .2);
+
     }
     .footer {
         width: 1118px;
