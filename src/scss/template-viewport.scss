@@ -1,6 +1,7 @@
 @media only screen and (max-width: 650px) {
   .molo {
     width: 100%;
+    padding: 0;
     .header {
         width: 100%!important;
         padding: 0 24px!important;
@@ -14,6 +15,9 @@
 
             margin-right: 0;
         }
+        .nav__menu {
+            margin-left: 15px;
+        }
     }
     .section {
       padding: 30px 24px 0 24px;
@@ -23,7 +27,7 @@
         flex-flow: column wrap;
         padding: 32px 16px;
         .mainBanner__contentWrapper {
-          width: 100%;
+          width: 100%!important;
           .mainBanner__heading {
             font-size: 62px !important;
             line-height: 58px !important;
@@ -86,7 +90,9 @@
                 width: 100% !important;
                 padding-right: 0 !important;
                 flex-flow: column wrap !important;
-                background-position: 0 !important;
+                margin-bottom: 45px;
+                // background-position: 0 !important;
+                background-size: cover;
                 .fourCardPack__cardImgWrapper {
                     top: -32px !important;
                 }
@@ -99,7 +105,7 @@
                         line-height: 32px;
                     }
                     .fourCardPack__cardText {
-                        width: 100% !important;
+                        width: 80% !important;
                     }
                     .fourCardPack__cardLink {
                         position: relative;
@@ -252,6 +258,31 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+    .molo {
+        .header {
+            width: 100%;
+        }
+        .section{
+            width: 100%;
+            padding-left: 75px;
+            .mainBanner {
+                width: 100%;
+                flex-flow: column wrap;
+                .mainBanner__contentWrapper {
+                    width: 100%;
+                    .mainBanner__heading {
+                        width: 100%;
+                    }
+                    .mainBanner__text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
