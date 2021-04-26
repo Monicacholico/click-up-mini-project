@@ -1,4 +1,4 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .molo {
     width: 100%;
   }
@@ -11,6 +11,9 @@
   }
   .molo .header .header__button {
     display: none !important;
+  }
+  .molo .header .logo {
+    margin-right: 0;
   }
   .molo .section {
     padding: 30px 24px 0 24px;
