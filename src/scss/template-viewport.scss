@@ -1,7 +1,6 @@
 @media only screen and (max-width: 650px) {
   .molo {
     width: 100%;
-    // background-color: hotpink;
     .header {
         width: 100%!important;
         padding: 0 24px!important;
@@ -252,27 +251,6 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .molo {
-    .row {
-      flex-flow: column wrap;
-    }
-    .col-8,
-    .col-4 {
-      width: 100%;
-    }
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  .molo {
-    .row {
-      flex-flow: column wrap;
-    }
-    .col-8,
-    .col-4,
-    .col-2 {
-      width: 100%;
-    }
-  }
-}
+
+
