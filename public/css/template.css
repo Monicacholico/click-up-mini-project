@@ -4,11 +4,6 @@ body {
   margin: 0;
 }
 
-.molo {
-  display: flex;
-  flex-flow: column wrap;
-}
-
 .molo .header {
   display: flex;
   flex-flow: row nowrap;
