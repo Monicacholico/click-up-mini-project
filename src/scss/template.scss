@@ -6,8 +6,9 @@ body {
 }
 
 .molo {
-    display: flex;
-    flex-flow: column wrap;
+    // display: flex;
+    // flex-flow: column wrap;
+    // width: 100%;
     .header {
         display: flex;
         flex-flow: row nowrap;
@@ -96,7 +97,7 @@ body {
                 top: -13px;
                 left: 10px;
                 font-size: 40px;
-                
+
             }
     }
     .section {
@@ -178,7 +179,7 @@ body {
                     color: #212353;
                     padding-top: 122px;
                     padding-left: 215px;
-                    margin-block-start: 0;   
+                    margin-block-start: 0;
                 }
                 .oneCard__text {
                     font-family: 'Nunito', sans-serif;
@@ -357,7 +358,7 @@ body {
                     }
                     .carousel__imgWrapper {
                         width: 20%;
-                        
+
                     }
                     .carousel__contentWrapper {
                         font-family: 'Nunito', sans-serif;
@@ -387,7 +388,7 @@ body {
                             color: #4B5D68;
                         }
                     }
-    
+
                 }
             }
             .carousel__row--pagination {
