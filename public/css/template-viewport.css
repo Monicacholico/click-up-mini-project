@@ -1,4 +1,4 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   .molo {
     width: 100%;
   }
@@ -238,27 +238,6 @@
   }
   .molo .section__fourCardPack--marginBottom {
     margin-bottom: 0 !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .molo .row {
-    flex-flow: column wrap;
-  }
-  .molo .col-8,
-  .molo .col-4 {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .molo .row {
-    flex-flow: column wrap;
-  }
-  .molo .col-8,
-  .molo .col-4,
-  .molo .col-2 {
-    width: 100%;
   }
 }
 
