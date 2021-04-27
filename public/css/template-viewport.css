@@ -1,3 +1,26 @@
+@media screen and (max-width: 768px) {
+  .molo .header {
+    width: 100%;
+  }
+  .molo .section {
+    width: 100%;
+    padding-left: 75px;
+  }
+  .molo .section .mainBanner {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+  .molo .section .mainBanner .mainBanner__contentWrapper {
+    width: 100%;
+  }
+  .molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__heading {
+    width: 100%;
+  }
+  .molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__text {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .molo {
     width: 100%;
@@ -49,6 +72,7 @@
     width: 100%;
     height: auto;
     margin-top: 16px;
+    padding: 16px 0 16px 16px;
   }
   .molo .section .oneCard .oneCard__imageWrapper {
     width: 100%;
@@ -62,7 +86,7 @@
   }
   .molo .section .oneCard .oneCard__contentWrapper .oneCard__heading {
     width: 100%;
-    padding: 5px 12px;
+    padding: 5px 12px 5px 0;
     padding-top: 12px;
     line-height: 42px;
   }
@@ -70,92 +94,96 @@
     width: 95%;
     margin-left: 0px;
     height: auto;
-    padding: 0px 5px 12px 0 !important;
   }
-  .molo .fourCardPack {
+  .molo .section .fourCardPack {
     width: 100%;
     margin-top: 12px !important;
   }
-  .molo .fourCardPack .fourCardPack__headerContent {
+  .molo .section .fourCardPack .fourCardPack__headerContent {
     width: 100%;
     margin: auto 0 !important;
   }
-  .molo .fourCardPack .fourCardPack__headerContent .fourCardPack__headerContent--title {
+  .molo .section .fourCardPack .fourCardPack__headerContent .fourCardPack__headerContent--title {
     margin-bottom: 24px !important;
   }
-  .molo .fourCardPack .fourCardPack__row {
+  .molo .section .fourCardPack .fourCardPack__row {
     flex-flow: column !important;
     height: auto !important;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem {
     width: 100% !important;
     padding-right: 0 !important;
     flex-flow: column wrap !important;
     margin-bottom: 45px;
     background-size: cover;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardImgWrapper {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardImgWrapper {
     top: -32px !important;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent {
     top: -45px !important;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLabel {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLabel {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardText {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardText {
     width: 80% !important;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLink {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLink {
     position: relative;
     top: -46px;
   }
-  .molo .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLink:after {
+  .molo .section .fourCardPack .fourCardPack__row .fourCardPack__cardItem .fourCardPack__cardContent .fourCardPack__cardLink:after {
     top: -27px !important;
   }
-  .molo .carousel {
+  .molo .section .carousel {
     width: 100% !important;
     height: auto !important;
     margin-bottom: 50px !important;
   }
-  .molo .carousel .carousel__heading {
+  .molo .section .carousel .carousel__heading {
     width: 100% !important;
     height: auto !important;
     text-align: center !important;
     padding: 24px !important;
   }
-  .molo .carousel .carousel__row {
+  .molo .section .carousel .carousel__row {
     margin-bottom: 25px;
-    padding: 16px !important;
+    padding: 16px;
+    align-items: center;
   }
-  .molo .carousel .carousel__row .carousel__cardItem {
+  .molo .section .carousel .carousel__row .carousel__cardItem {
     flex-flow: column !important;
   }
-  .molo .carousel .carousel__row .carousel__cardItem .carousel__imgWrapper {
+  .molo .section .carousel .carousel__row .carousel__cardItem .carousel__imgWrapper {
     padding: 24px !important;
   }
-  .molo .carousel .carousel__row .carousel__cardItem .carousel__contentWrapper {
+  .molo .section .carousel .carousel__row .carousel__cardItem .carousel__contentWrapper {
     padding-top: 0 !important;
   }
-  .molo .carousel .carousel__row .carousel__cardItem.carousel__cardItem--one {
+  .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--one {
     width: 100% !important;
     margin-left: 0 !important;
     align-items: center !important;
   }
-  .molo .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two {
+  .molo .section .carousel .carousel__row .carousel__cardItem.carousel__cardItem--two {
     display: none !important;
   }
-  .molo .carousel .carousel__row.carousel__row--pagination .carousel__pagination--active, .molo .carousel .carousel__row.carousel__row--pagination .carousel__pagination {
+  .molo .section .carousel .carousel__row.carousel__row--pagination .carousel__pagination--active, .molo .section .carousel .carousel__row.carousel__row--pagination .carousel__pagination {
     display: none;
   }
-  .molo .carousel .carousel__row.carousel__row--pagination .carousel__controlArrow--right {
+  .molo .section .carousel .carousel__row.carousel__row--pagination .carousel__controlArrow--left {
     left: 55% !important;
     font-size: 40px !important;
     opacity: 1 !important;
     top: -5px !important;
+  }
+  .molo .section .carousel .carousel__row.carousel__row--pagination .carousel__controlArrow--right {
+    left: 63.5% !important;
+    top: -7px;
   }
   .molo .ribbon {
     width: 100% !important;
@@ -246,29 +274,6 @@
   }
   .molo .section__fourCardPack--marginBottom {
     margin-bottom: 0 !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .molo .header {
-    width: 100%;
-  }
-  .molo .section {
-    width: 100%;
-    padding-left: 75px;
-  }
-  .molo .section .mainBanner {
-    width: 100%;
-    flex-flow: column wrap;
-  }
-  .molo .section .mainBanner .mainBanner__contentWrapper {
-    width: 100%;
-  }
-  .molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__heading {
-    width: 100%;
-  }
-  .molo .section .mainBanner .mainBanner__contentWrapper .mainBanner__text {
-    width: 100%;
   }
 }
 
