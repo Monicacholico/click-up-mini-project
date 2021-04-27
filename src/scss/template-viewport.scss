@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-    .molo {
         .header {
             width: 100%;
         }
@@ -8,7 +7,7 @@
             padding-left: 75px;
             .mainBanner {
                 width: 100%;
-                flex-flow: column wrap;
+
                 .mainBanner__contentWrapper {
                     width: 100%;
                     .mainBanner__heading {
@@ -18,10 +17,17 @@
                         width: 100%;
                     }
                 }
+                .mainBanner__img {
+                    top: 0 !important;
+                    left: 270px !important;
+                    height: 100vh;
+                    width: 100% !important;
+                    margin: 0;
+                    background-size: contain !important;
+                    background-position: center;
+                }
             }
         }
-    }
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -67,7 +73,9 @@
           .mainBanner__button {
               width: 100%!important;
           }
-
+        }
+        .mainBanner__img {
+            display: none;
         }
       }
       .oneCard {
